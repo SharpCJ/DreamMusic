@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <EditText
+        android:id="@+id/et_searchlocal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索本地歌曲"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/search_edittext_bg"
+        android:gravity="center_horizontal"
+        android:drawableLeft="@mipmap/search1" />
+
+    <ListView
+        android:id="@+id/lvlocalSong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+    </ListView>
+
+</LinearLayout>

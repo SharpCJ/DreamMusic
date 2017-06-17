@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivSongIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher"/>
+        <com.example.sharpcj.dreammusic.common.widget.MyTextViewForRank
+            android:id="@+id/textViewRank"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="演员"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:layout_alignTop="@id/frameLayout"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/frameLayout"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tvSinger"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="薛之谦"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textColor="#80000000"
+        android:layout_alignLeft="@id/tvSongName"
+        android:layout_alignBottom="@id/frameLayout"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@mipmap/bt_recsong_more"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_alignLeft="@id/frameLayout"
+        android:layout_alignRight="@id/ivMenu"
+        android:layout_below="@id/frameLayout"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
